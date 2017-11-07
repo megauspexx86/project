@@ -1,0 +1,6 @@
+backend/vendor/autoload.php
+.idea/.name
+.idea/
+backend/vendor/
+tmp/sessions/
+tmp/templates/

@@ -506,7 +506,7 @@ return [
      */
     'support' => [
         'phone' => '8-800-500-28-49',
-        'email' => 'help@napishem.com',
+        'email' => 'help@project.com',
         'working_time' => 'Ежедневно с 8:00 до 00:00 (МСК)',
         'manager_work_time' => 'Будни с 9:00 до 18:00 (МСК)',
         'wl_support_email' => 'zakaz.helper@gmail.com'

@@ -28,20 +28,8 @@ use Vendor\Lib\Validator\FormValidator;
 class ModPublic extends Module {
 
     public function onIndex() {
+
         $view = new HtmlView('public.tpl');
-
-        if($user = Session::getInstance()->current_user) {
-            if(CPartner::findByUserId($user->id)) {
-                header('Location: ' . ProjectConfig::getInstance()->getKey('settings', 'partner_url') . '/statistics/main');
-            }
-            $view->addObject('logged', true);
-        }else{
-            $view->addObject('logged', false);
-        }
-
-        $view->addObject('captcha', RECAPTCHA_PUBLIC);
-
-        $view->addObject('metrika', ProjectConfig::getInstance()->getKey('external_service', 'yandex_metrika'));
 
         return $view;
     }

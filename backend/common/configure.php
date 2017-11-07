@@ -37,7 +37,7 @@ define('LOCALE_DIR', sprintf('%s/locale', dirname(__FILE__)));
 
 define('ENGINE_DIR', BASE_DIR . '/engine');
 define('COMPONENT_DIR', BASE_DIR . '/components');
-define('TEMPLATE_DIR', BASE_DIR . '../../frontend/templates');
+define('TEMPLATE_DIR', BASE_DIR . '/../frontend/templates');
 define('COMMON_DIR', BASE_DIR . '/common');
 define('PROFILING_MODE', intval($env->profiling_mode));
 

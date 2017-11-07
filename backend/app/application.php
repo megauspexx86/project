@@ -14,6 +14,7 @@ class Application extends \Vendor\Core\Application {
         parent::setupComponents();
         $this->url_mapper->addRule('^/$', '\App\Modules\ModPublic', 'onIndex');
 
+        
        /* $this->url_mapper->addRule('^/json/report/data$', '\App\Modules\ModStatistic', 'onLoadPromoData');
         $this->url_mapper->addRule('^/json/report/common$', '\App\Modules\ModStatistic', 'onCommonReport');
         $this->url_mapper->addRule('^/json/report/promo$', '\App\Modules\ModStatistic', 'onPromoReport');

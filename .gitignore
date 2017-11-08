@@ -4,3 +4,5 @@ backend/vendor/autoload.php
 backend/vendor/
 tmp/sessions/
 tmp/templates/
+frontend/static/node_modules/
+frontend/static/production/

@@ -67,7 +67,7 @@ gulp.task('imagemin', function() {
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest('dev/img')) //И бросим в build
+        .pipe(gulp.dest('production/img')) //И бросим в build
         .pipe(browserSync.reload({stream: true}));
 });
 

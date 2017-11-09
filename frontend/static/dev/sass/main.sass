@@ -1,0 +1,290 @@
+$accent: #7eca86
+
+body, *
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	outline: none
+
+body
+	background: #fff
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	color: #000
+
+.container
+	max-width: 1400px
+	margin: 0 auto
+
+.header
+	height: 350px
+	background: #c3c3c3
+
+.header__title
+	font-size: 36px
+	color: white
+	font-weight: 300
+
+.content
+	background: #fbfbfb
+
+.content__inner
+	display: flex
+	justify-content: space-between
+	padding: 15px 0 30px
+
+.content__body
+	width: 1100px
+
+.content__list
+	width: 100%
+	display: flex
+	flex-direction: column
+	list-style: none
+	margin: 0
+	padding: 0
+
+.content__item
+	background: #fbfbfb
+	border: 1px solid #e2e1e1
+	border-radius: 6px
+	display: flex
+	padding-right: 15px
+	margin-bottom: 10px
+
+.content__item-number
+	background: #f8f8f8
+	width: 50px
+	border-right: 1px solid #e2e1e1
+	border-radius: 6px 0 0 6px
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: 300
+
+.content__item-button
+	background: $accent
+	text-decoration: none
+	color: white
+	width: 160px
+	height: 35px
+	font-weight: 300
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 4px
+	transition: .4s ease
+	align-self: center
+	&:hover
+		background: lighten($accent,8)
+	&:active
+		background: darken($accent,8)
+
+.content__image-wrapper
+	width: 200px
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 15px
+
+.content__item-image
+	display: block
+	max-width: 100%
+	height: auto
+
+.content__item-inner
+	padding: 15px 0
+	width: 460px
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+.content__price
+	width: 180px
+	display: flex
+	align-items: center
+	justify-content: center
+	font-weight: 600
+
+.content__item-title
+	font-size: 15px
+	font-weight: 600
+	text-transform: uppercase
+	margin-bottom: 4px
+
+.content__item-description
+	color: #333
+	font-size: 15px
+	margin-bottom: 20px
+
+.content__item-recalls
+	font-size: 16px
+	color: #666
+	font-weight: 300
+	&:hover
+		text-decoration: none
+		color: #999
+
+.content__filter
+	display: flex
+	justify-content: flex-end
+
+.content__filter-select
+	border-radius: 6px
+	width: 160px
+	height: 35px
+	border-right: 1px solid #e2e1e1
+	background: #f8f8f8
+
+.sidebar
+	width: 280px
+	padding: 0
+	border: 1px solid #e2e1e1
+	border-radius: 6px
+
+.sidebar__header
+	background: #f8f8f8
+	padding: 10px 15px
+	border-bottom: 1px solid #e2e1e1
+	border-radius: 6px 6px 0 0
+
+.sidebar__block
+	padding: 15px 15px 20px 15px
+	border-bottom: 1px solid #e2e1e1
+
+.sidebar__inner
+	display: flex
+	align-items: center
+	margin-top: 10px
+
+.sidebar__range
+	margin-top: 20px
+
+.sidebar__input
+	border-radius: 4px
+	height: 30px
+	width: 85px
+	border: 1px solid #e2e1e1
+	margin: 0 15px 0 5px
+	padding: 0 10px
+
+.create-button
+	width: 280px
+	height: 40px
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 20px
+	text-decoration: none
+	color: white
+	background: $accent
+	border-radius: 4px
+	font-weight: 300
+	text-transform: uppercase
+	font-size: 14px
+	&:hover
+		background: lighten($accent,8)
+	&:active
+		background: darken($accent,8)
+
+.personal-order
+	background: white
+	border-radius: 6px
+	margin: 0 auto
+	width: 700px
+	position: relative
+	padding: 30px 20px
+
+.personal-order__title
+	text-transform: uppercase
+	text-align: center
+
+.personal-order__buttons-wrapper
+	width: 100%
+	display: flex
+	justify-content: space-between
+	margin-top: 20px
+
+.personal-order__button
+	width: 200px
+	height: 40px
+	border-radius: 4px
+	text-transform: uppercase
+	color: white
+	font-size: 18px
+	font-weight: 300
+	text-decoration: none
+	display: flex
+	justify-content: center
+	align-items: center
+	background: $accent
+	&:hover
+		background: lighten($accent,8)
+	&:active
+		background: darken($accent,8)
+
+.types
+	list-style: none
+	padding: 0
+	margin: 0
+	width: 220px
+	border: 1px solid lightgrey
+
+.types__item
+	background: #c0c0c0
+	border-bottom: 1px solid white
+	&:first-child
+		.subtype
+			display: block
+
+.types__link
+	text-decoration: none
+	text-transform: uppercase
+	padding: 10px
+	color: white
+	display: block
+	font-weight: 300
+	background: url('../img/arrow.png') no-repeat 95% 16px
+
+.subtype
+	display: none
+	list-style: none
+	background: white
+
+.subtype__item
+	&:last-child
+		.subtype__link
+			border-bottom: none
+
+.subtype__link
+	text-decoration: none
+	color: #333
+	padding: 4px 15px
+	display: block
+	border-bottom: 1px solid lightgrey
+	&_active
+		background: #e2e1e1
+
+.photos
+	width: 440px
+	background: white
+	padding: 10px
+	border: 1px solid lightgrey
+	border-left: none
+	display: flex
+	justify-content: center
+	align-items: center
+
+.personal-order__step
+	display: flex
+	margin: 20px 0
+
+.photo
+	display: block
+	max-width: 100%
+	height: auto
+
+.photos__block
+	display: none
+	&_active
+		display: block

@@ -62,11 +62,6 @@ $config = [
          */
         'success_create_url' => 'http://a.napishem.lc/switch/?to=%s',
 
-
-        /**
-         * Адрес CSS для партнерских компонентов
-         */
-        'css' => 'http://partner.napishem.lc/widget.css'
     ],
 
     /**
@@ -147,7 +142,9 @@ $config = [
         /**
          * Адрес новой панели управления
          */
-        'admin_url' => 'http://admin.napishem.lc'
+        'admin_url' => 'http://admin.napishem.lc',
+
+        'public_assets' => '/dev',
     ],
 
     /**
@@ -243,7 +240,6 @@ $config = [
         'telegram_botname' => 'apoltestbot'
     ]
 ];
-
-return array_replace_recursive($global, $config);
+return  array_replace_recursive($global, $config);
 
 ?>

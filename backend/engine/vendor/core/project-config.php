@@ -9,7 +9,7 @@ class ProjectConfig {
 
     final protected function __construct($files) {
        foreach($files as $filename) {
-           $this->config = array_replace_recursive($this->config, require_once($filename));
+           $this->config = array_replace_recursive($this->config,$filename);
        }
     }
 

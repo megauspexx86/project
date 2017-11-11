@@ -185,9 +185,9 @@ return [
         'assets' => '/assets',
 
         /**
-         * Директория доступа к статике (images, js, fonts, etc) для LP партнерской программы
+         * Директория доступа к статике (images, js, fonts)
          */
-        'public_assets' => '/resources',
+        'public_assets' => null,
 
         /**
          * Адрес директории для изображений в письмах
@@ -330,17 +330,6 @@ return [
     "sms" => false,
 
     /**
-     * Настройки проекта партнерской программы
-     */
-    'partner' => [
-
-        /**
-         * Пользователи которым доступно создание WL
-         */
-        'wl_ids' => []
-    ],
-
-    /**
      * Секция настроек чата
      */
     'online' => [
@@ -351,41 +340,12 @@ return [
         'port' => 3002
     ],
 
-	'filter_chat' => [
-		'min_count' => 10, /* минимальное количество срабатывания правила для выставления веса*/
-		'wary_count' => 3, /* количество нарушений для наступления блокировки автора*/
-		'wary_time' => 3, /* период, часов, для учета количества нарушений*/
-		'block_percent' => 80 /*процент точности правила для проведения блокировки*/
-	],
-
 	/**
 	 * captcha включить - true, отключить - false
 	 */
 	'captcha' => [
 		'enabled' => true
-	],
+	]
 
-	/**
-	 * коды стран СНГ geoip сервис
-	 * https://redmine.napdev.ru/issues/10586
-	 */
-	'sng_countries' => [18, 9, 36, 122, 113, 136, 185, 211, 213, 227, 222],
-
-	/**
-	 * способы оплаты для ROBOKASSA_OOO, актуально на 29.08.2017
-	 * https://redmine.napdev.ru/issues/10586
-	 */
-	'robokassa_payment_methods' => ['_APPLEPAY_CURRENT_PAYMENT_SYSTEM_','_QIWI_CURRENT_PAYMENT_SYSTEM_','_WEB_MONEY_CURRENT_PAYMENT_SYSTEM_', '_YANDEX_MONEY_CURRENT_PAYMENT_SYSTEM_', '_BANK_CARD_CURRENT_PAYMENT_SYSTEM_', '_MOBILE_MTS_CURRENT_PAYMENT_SYSTEM_',  '_MOBILE_MEGAFON_CURRENT_PAYMENT_SYSTEM_'],
-
-    /**
-     * Настройки ботов мессенджеров
-     */
-    'messenger' =>[
-
-        /**
-         * Имя телеграм бота
-         */
-        'telegram_botname' => null
-    ]
 
 ];

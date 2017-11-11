@@ -1,7 +1,6 @@
 <?php
 
 define('BASE_DIR', dirname(__FILE__));
-define('PARTNER_COMPONENT_TEMPLATE_DIR', BASE_DIR . '/static/components');
 
 $env = require_once ('common/configure.php');
 

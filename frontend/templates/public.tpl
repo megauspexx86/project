@@ -5,8 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=1170">
 		<title></title>
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/magnific-popup.css">
+
+        <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/main.min.css">
+		<link rel="stylesheet" href="{$config['settings']['public_assets']}/css/magnific-popup.min.css">
+
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 	</head>
@@ -246,43 +248,43 @@
 						</ul>
 						<div class="photos">
 							<div class="photos__block photos__block_active">
-								<img src="/production/img/1.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/1.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="../static/production/img/2.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/2.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/3.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/3.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/4.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/4.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/5.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/5.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/6.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/6.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/7.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/7.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/8.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/8.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/9.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/9.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/10.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/10.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/11.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/11.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/12.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/12.png" alt="" class="photo">
 							</div>
 							<div class="photos__block">
-								<img src="img/13.png" alt="" class="photo">
+								<img src="{$config['settings']['public_assets']}/img/13.png" alt="" class="photo">
 							</div>
 						</div>
 					</div>
@@ -302,7 +304,9 @@
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script src="../static/production/js/jquery.magnific-popup.min.js"></script>
-		<script src="../static/production/js/main.js"></script>
+		<script src="{$config['settings']['public_assets']}/js/jquery.magnific-popup.min.js"></script>
+
+		<script src="{$config['settings']['public_assets']}/js/common.min.js"></script>
+		<script src="{$config['settings']['public_assets']}/js/scripts.min.js"></script>
 	</body>
 </html>

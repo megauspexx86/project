@@ -132,6 +132,7 @@ $config = [
          */
         'admin_url' => 'https://admin.napishem.ru',
 
+        'public_assets' => '/production',
 
         /**
          * Директория доступа к консольным скриптам

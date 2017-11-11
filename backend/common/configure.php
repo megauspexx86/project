@@ -74,7 +74,7 @@ ini_set('session.save_path', TMP_DIR . '/sessions');
 ini_set('session.gc_maxlifetime', 7200);
 ini_set('session.cookie_lifetime', 7200);
 
-/*$sms = (array) $env->sms;
+$sms = (array) $env->sms;
 
 $locale = new \Vendor\Core\Locale();
 
@@ -92,7 +92,7 @@ define('EMAIL_TEMPLATE_DIR', COMMON_DIR . '/email/templates/' . $locale->locale(
 
 $locale->set();
 
-date_default_timezone_set($env->timezone);*/
+date_default_timezone_set($env->timezone);
 
 return $env->env;
 

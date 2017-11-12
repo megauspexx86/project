@@ -12,7 +12,10 @@ class Application extends \Vendor\Core\Application {
     protected function setupComponents() {
 
         parent::setupComponents();
+
         $this->url_mapper->addRule('^/$', '\App\Modules\ModPublic', 'onIndex');
+        $this->url_mapper->addRule('^/ab$', '\App\Modules\ModPublic', 'onIndexAB');
+
 
         
        /* $this->url_mapper->addRule('^/json/report/data$', '\App\Modules\ModStatistic', 'onLoadPromoData');

@@ -21,3 +21,24 @@
 
  потом
  sudo service  nginx restart
+
+
+
+
+12.11.2017 21:58
+
+sudo nano /etc/nginx/sites-available/napishembase
+
+
+ location / {
+                rewrite ^/(.*)$ /index.php last;
+        }
+
+
+
+добавь последним в location
+
+sudo service  nginx restart
+
+
+http://www.project.lc/ab страница с констуктором в шапке

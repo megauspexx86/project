@@ -34,5 +34,11 @@ class ModPublic extends Module {
         return $view;
     }
 
+    public function onIndexAB() {
+        $view = new HtmlView('public-ab.tpl');
+
+        return $view;
+    }
+
 }
 

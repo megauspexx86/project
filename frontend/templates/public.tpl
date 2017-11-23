@@ -7,7 +7,7 @@
 		<title></title>
 
         <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/main.min.css">
-		<link rel="stylesheet" href="{$config['settings']['public_assets']}/css/magnific-popup.min.css">
+		<link rel="stylesheet" href="{$config['settings']['public_assets']}/css/magnific-popup.css">
 
 		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
@@ -138,7 +138,7 @@
 							<li class="content__item">
 								<div class="content__item-number">1</div>
 								<div class="content__image-wrapper">
-									<img src="img/image-1.png" alt="" class="content__item-image">
+									<img src="{$config['settings']['public_assets']}/img/image-1.png" alt="" class="content__item-image">
 								</div>
 								<div class="content__item-inner">
 									<p class="content__item-title">KBE Эксперт 1320x1430 Г+П/О СП2</p>
@@ -153,7 +153,7 @@
 							<li class="content__item">
 								<div class="content__item-number">2</div>
 								<div class="content__image-wrapper">
-									<img src="img/image-1.png" alt="" class="content__item-image">
+									<img src="{$config['settings']['public_assets']}/img/image-1.png" alt="" class="content__item-image">
 								</div>
 								<div class="content__item-inner">
 									<p class="content__item-title">KBE Эксперт 1320x1430 Г+П/О СП2</p>
@@ -168,7 +168,7 @@
 							<li class="content__item">
 								<div class="content__item-number">3</div>
 								<div class="content__image-wrapper">
-									<img src="img/image-1.png" alt="" class="content__item-image">
+									<img src="{$config['settings']['public_assets']}/img/image-1.png" alt="" class="content__item-image">
 								</div>
 								<div class="content__item-inner">
 									<p class="content__item-title">KBE Эксперт 1320x1430 Г+П/О СП2</p>
@@ -304,7 +304,6 @@
 		<![endif]-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script src="{$config['settings']['public_assets']}/js/jquery.magnific-popup.min.js"></script>
 
 		<script src="{$config['settings']['public_assets']}/js/common.min.js"></script>
 		<script src="{$config['settings']['public_assets']}/js/scripts.min.js"></script>

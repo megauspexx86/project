@@ -17,8 +17,7 @@ body
 	margin: 0 auto
 
 .header
-	height: 350px
-	background: #c3c3c3
+	background: #fff
 
 .header__title
 	font-size: 36px
@@ -288,3 +287,174 @@ body
 	display: none
 	&_active
 		display: block
+
+.constructor
+	padding: 20px 0
+	.container
+		display: flex
+		justify-content: center
+
+.constructor__left
+	width: 300px
+
+.constructor__type
+	display: flex
+	list-style: none
+	padding: 0
+	margin: 0
+
+.constructor__type-item
+	margin: 0 15px
+	display: flex
+	flex-direction: column
+	align-items: center
+	text-align: center
+	position: relative
+	&:hover
+		.constructor__bottom-list
+			display: block
+
+.constructor__type-wrapper
+	width: 63px
+	height: 46px
+	display: block
+	border: 1px solid #b5b5b5
+	border-radius: 2px
+
+.constructor__bottom-item
+	width: 63px
+	height: 46px
+	display: block
+	border-radius: 2px
+	border: 1px solid #b5b5b5
+	border-top: none
+	&:hover
+		.constructor__type-bg
+			background: #dcdcdc
+
+.constructor__image
+	display: block
+	width: 100%
+	height: 100%
+	overflow: hidden
+	cursor: pointer
+	position: relative
+
+.constructor__bottom-list
+	list-style: none
+	padding: 0
+	margin: 0
+	display: none
+	position: absolute
+	top: 46px
+
+.constructor__type-bg
+	background: #f5f5f5
+	display: block
+	width: 100%
+	height: 100%
+
+.constructor__type-icon
+	position: absolute
+	left: 0
+	top: 0
+	width: 63px
+	height: 46px
+	background: url('menu-icons.png') no-repeat
+
+.constructor__type-item a#type_1_1 .constructor__type-icon
+	background-position: 6px -5px
+
+.constructor__type-item a#type_1_2 .constructor__type-icon
+	background-position: 6px -61px
+
+.constructor__type-item a#type_1_3 .constructor__type-icon
+	background-position: 6px -117px
+
+.constructor__type-item a#type_2_1 .constructor__type-icon
+	background-position: -46px -5px
+
+.constructor__type-item a#type_2_2 .constructor__type-icon
+	background-position: -46px -61px
+
+.constructor__type-item a#type_2_3 .constructor__type-icon
+	background-position: -46px -117px
+
+.constructor__type-item a#type_3_1 .constructor__type-icon
+	background-position: -98px -61px
+
+.constructor__type-item a#type_3_2 .constructor__type-icon
+	background-position: -98px -117px
+
+.constructor__name
+	font-size: 14px
+	font-family: 'Roboto'
+
+.constructor__box-top
+	display: flex
+
+.constructor__box-inner,
+.constructor__door,
+.constructor__window-height
+	display: flex
+	flex-direction: column
+
+.constructor__box-framuga-one
+	width: 95px
+	height: 80px
+	background: url(wnd-icons.png) no-repeat -200px -540px
+
+.constructor__box-framuga-two
+	width: 190px
+	height: 80px
+	background: url(wnd-icons.png) no-repeat -295px -540px
+
+.constructor__box-framuga-three
+	display: block
+	width: 285px
+	height: 80px
+	background: url(wnd-icons.png) no-repeat -200px -700px
+
+.constructor__box-bottom
+	display: flex
+	justify-content: center
+
+.constructor__box-window_11
+	display: block
+	width: 100px
+	height: 200px
+	background: url(wnd-icons.png) no-repeat 0 -600px
+
+.constructor__window
+	display: flex
+	flex-direction: column
+
+.constructor__input
+	border-radius: 4px
+	height: 30px
+	width: 100px
+	border: 1px solid #e2e1e1
+	margin: 3px 0 0
+	padding: 0 10px
+
+.constructor__label
+	color: #333
+	font-size: 15px
+	text-align: center
+
+.constructor__door,
+.constructor__window-height
+	justify-content: center
+
+.constructor__door
+	margin-right: 15px
+
+.constructor__window-height
+	margin-left: 15px
+
+.constructor__box
+	margin-bottom: 7px
+
+.constructor__center
+	width: 550px
+	margin: 0 20px

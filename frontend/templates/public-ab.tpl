@@ -55,9 +55,238 @@
 </div>
 
 
-
-
 </header>
+
+<div class="constructor">
+    <div class="container">
+        <div class="constructor__left">
+            <ul class="constructor__type">
+                <li class="constructor__type-item">
+                    <span class="constructor__type-wrapper">
+                        <a id="type_1_2" class="constructor__image">
+                            <span class="constructor__type-bg"></span>
+                            <span class="constructor__type-icon"></span>
+                            Двухстворчатое окно
+                        </a>
+                    </span>
+                    <ul class="constructor__bottom-list">
+                        <li class="constructor__bottom-item">
+                            <a id="type_1_1" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Одностворчатое окно
+                            </a>
+                        </li>
+                        <li class="constructor__bottom-item">
+                            <a id="type_1_2" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Двухстворчатое окно
+                            </a>
+                        </li>
+                        <li class="constructor__bottom-item">
+                            <a id="type_1_3" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Трехстворчатое окно
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="constructor__name">Обычное окно</span>
+                </li>
+                <li class="constructor__type-item">
+                    <span class="constructor__type-wrapper">
+                        <a id="type_2_2" class="constructor__image">
+                            <span class="constructor__type-bg"></span>
+                            <span class="constructor__type-icon"></span>
+                            Двухстворчатое окно с фрамугой
+                        </a>
+                    </span>
+                    <ul class="constructor__bottom-list">
+                        <li class="constructor__bottom-item">
+                            <a id="type_2_1" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Одностворчатое окно с фрамугой
+                            </a>
+                        </li>
+                        <li class="constructor__bottom-item">
+                            <a id="type_2_2" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Двухстворчатое окно с фрамугой
+                            </a>
+                        </li>
+                        <li class="constructor__bottom-item">
+                            <a id="type_2_3" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Трехстворчатое окно с фрамугой
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="constructor__name">Окно с фрамугой</span>
+                </li>
+                <li class="constructor__type-item">
+                    <span class="constructor__type-wrapper">
+                        <a id="type_3_2" class="constructor__image">
+                            <span class="constructor__type-bg"></span>
+                            <span class="constructor__type-icon"></span>
+                            Двухстворчатый балконный блок
+                        </a>
+                    </span>
+                    <ul class="constructor__bottom-list">
+                        <li class="constructor__bottom-item">
+                            <a id="type_3_1" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Одностворчатый балконный блок
+                            </a>
+                        </li>
+                        <li class="constructor__bottom-item">
+                            <a id="type_3_2" class="constructor__image">
+                                <span class="constructor__type-bg"></span>
+                                <span class="constructor__type-icon"></span>
+                                Двухстворчатый балконный блок
+                            </a>
+                        </li>
+                    </ul>
+                    <span class="constructor__name">Балконный блок</span>
+                </li>
+            </ul>
+            <div class="constructor__row">
+                <label for="constructor-profiles" class="constructor__label">Профиль:</label>
+                <select id="constructor-profiles" class="constructor__select">
+                    <option value="fav">Фаворит 71 мм</option>
+                    <option value="bau">Баутек 71 мм</option>
+                    <option value="grain">Grain Prestige 70 мм</option>
+                </select>
+            </div>
+            <div class="constructor__row">
+                <label for="constructor-clrs">Цвета сторон:</label>
+                <select id="constructor-clrs">
+                    <option value="whwh">Белый/Белый</option>
+                    <option value="whclr">Белый/Цвет</option>
+                    <option value="clrclr">Цвет/Цвет</option>
+                </select>
+            </div>
+            <div class="constructor__row">
+                <label for="constructor-glasses">Стеклопакет:</label>
+                <select id="constructor-glasses">
+                    <option value="spo24">Однокамерный 24 мм</option>
+                    <option value="spd32">Двухкамерный 32 мм</option>
+                    <option value="spd40">Двухкамерный 40 мм</option>
+                    <option value="snd32">Сэндвич 32 мм</option>
+                </select>
+            </div>
+            <div class="constructor__row">
+                <label for="constructor-glasstypes">Стекло:</label>
+                <select id="constructor-glasstypes">
+                    <option value="ordinary">Обычное</option>
+                    <option value="energo">Энергосберегающее</option>
+                    <option value="reflective">Солнцеотражающее</option>
+                    <option value="energoreflective">Энерго+зеркало</option>
+                    <option value="armored">Бронированное</option>
+                </select>
+            </div>
+            <div class="consttructor__title">Дополнительно</div>
+            <div class="constructor__row">
+                <div class="constructor__row-title">Подоконник:</div>
+                <select id="constructor-podoconnik">
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                    <option value="500">500</option>
+                </select>
+            </div>
+            <div class="constructor__row">
+                <div class="constructor__row-title">Ограничитель открывания:</div>
+                <select id="constructor-podoconnik">
+                    <option value="no">Нет</option>
+                    <option value="obichniy">Обычный</option>
+                    <option value="discretniy">Дискретный</option>
+                </select>
+            </div>
+            <div class="constructor__row">
+                <input type="checkbox" class="constructor__checkbox" id="micro" />
+                <label for="micro">Микропроветривание</label>
+            </div>
+            <div class="constructor__row">
+                <input type="checkbox" class="constructor__checkbox" id="moskitnaya" />
+                <label for="moskitnaya">Москитная сетка</label>
+            </div>
+            <div class="constructor__row">
+                <input type="checkbox" class="constructor__checkbox" id="vodootliv" />
+                <label for="vodootliv">Водоотлив</label>
+            </div>
+        </div>
+        <div class="constructor__center">
+            <div class="constructor__right-title" id="main-title">Двухстворчатое окно</div>
+            <div class="constructor__box">
+                <div class="constructor__box-top">
+                    <a href="#" class="constructor__box-framuga-one" title="глухая"></a>
+                    <div class="constructor__box-inner">
+                        <label for="framuga-height">Высота фрамуги</label>
+                        <input id="framuga-height" type="text" value="600" class="constructor__input">
+                    </div>
+                </div>
+                <div class="constructor__box-bottom">
+                    <div class="constructor__door">
+                        <label for="door-height" class="constructor__label">Высота двери</label>
+                        <input id="door-height" type="text" value="2000" class="constructor__input">
+                    </div>
+                    <div class="constructor__window">
+                        <a href="#" class="constructor__box constructor__box-window_11" title="Глухая"></a>
+                        <label for="window-width" class="constructor__label">Ширина</label>
+                        <input id="window-width" type="text" value="700" class="constructor__input">
+                    </div>
+                    <div class="constructor__window">
+                        <a href="#" class="constructor__box constructor__box-window_11" title="Глухая"></a>
+                        <label for="window-width" class="constructor__label">Ширина</label>
+                        <input id="window-width" type="text" value="700" class="constructor__input">
+                    </div>
+                    <div class="constructor__window">
+                        <a href="#" class="constructor__box constructor__box-window_11" title="Глухая"></a>
+                        <label for="window-width" class="constructor__label">Ширина</label>
+                        <input id="window-width" type="text" value="700" class="constructor__input">
+                    </div>
+                    <div class="constructor__window-height">
+                        <label for="window-height" class="constructor__label">Высота окна</label>
+                        <input id="window-height" type="text" value="1300" class="constructor__input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="constructor__right">
+            <div class="constructor__right-title">Монтажные работы</div>
+            <div class="constructor__row">
+                <div class="constructor__right-label">Установка окна:</div>
+                <input type="radio" class="constructor__radio" id="ustanovka-okna-da" name="radio">
+                <label for="ustanovka-okna-da">Да</label>
+
+                <input type="radio" class="constructor__radio" id="ustanovka-okna-net" name="radio">
+                <label for="ustanovka-okna-net">Нет</label>
+            </div>
+            <div class="constructor__row">
+                <div class="constructor__right-label">Отделка откосов:</div>
+                <input type="radio" class="constructor__radio" id="otdelka-otkosov-da" name="radio">
+                <label for="otdelka-otkosov-da">Да</label>
+
+                <input type="radio" class="constructor__radio" id="otdelka-otkosov-net" name="radio">
+                <label for="otdelka-otkosov-net">Нет</label>
+            </div>
+            <div class="constructor__row">
+                <label for="type-house" class="constructor__label">Тип дома:</label>
+                <select id="type-house" class="constructor__select">
+                    <option value="panelniy">Панельный</option>
+                    <option value="kirpichniy">Кирпичный</option>
+                    <option value="derevyanniy">Деревянный</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
 <section class="content">
     <div class="container">
         <div class="content__inner">

@@ -29,7 +29,7 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
     return gulp.src([
-        // 'dev/libs/jquery/dist/jquery.min.js', раскомментировать, если будем использовать не из sdn
+        'dev/libs/magnific-popup/jquery.magnific-popup.min.js', //раскомментировать, если будем использовать не из sdn
         'dev/js/common.min.js' // Всегда в конце
     ])
         .pipe(concat('scripts.min.js'))
@@ -85,7 +85,8 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
     ]).pipe(gulp.dest('production'));
 
     var buildCss = gulp.src([
-        'dev/css/main.min.css'
+        'dev/css/main.min.css',
+        'dev/libs/magnific-popup/magnific-popup.css'
     ]).pipe(gulp.dest('production/css'));
 
     var buildJs = gulp.src([

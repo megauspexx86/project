@@ -220,8 +220,8 @@
                 <label for="vodootliv">Водоотлив</label>
             </div>
         </div>
-        <div class="constructor__center">
-            <div class="constructor__right-title" id="main-title">Двухстворчатое окно</div>
+        <div class="constructor__center" id="ctype_2_1">
+            <div class="constructor__right-title" id="main-title">Одностворчатое окно</div>
             <div class="constructor__box">
                 <div class="constructor__box-top">
                     <a href="#" class="constructor__box-framuga-one" title="глухая"></a>

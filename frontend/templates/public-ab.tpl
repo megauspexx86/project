@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=1170">
     <title></title>
 
-    <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/main.min.css">
     <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/magnific-popup.min.css">
+    <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/semantic.min.css">
+    <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/main.min.css">
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
@@ -156,7 +157,7 @@
             </ul>
             <div class="constructor__row">
                 <label for="constructor-profiles" class="constructor__label">Профиль:</label>
-                <select id="constructor-profiles" class="constructor__select">
+                <select id="constructor-profiles ui dropdown" class="constructor__select">
                     <option value="fav">Фаворит 71 мм</option>
                     <option value="bau">Баутек 71 мм</option>
                     <option value="grain">Grain Prestige 70 мм</option>
@@ -207,15 +208,15 @@
                     <option value="discretniy">Дискретный</option>
                 </select>
             </div>
-            <div class="constructor__row">
+            <div class="constructor__row ui checkbox">
                 <input type="checkbox" class="constructor__checkbox" id="micro" />
                 <label for="micro">Микропроветривание</label>
             </div>
-            <div class="constructor__row">
+            <div class="constructor__row ui checkbox">
                 <input type="checkbox" class="constructor__checkbox" id="moskitnaya" />
                 <label for="moskitnaya">Москитная сетка</label>
             </div>
-            <div class="constructor__row">
+            <div class="constructor__row ui checkbox">
                 <input type="checkbox" class="constructor__checkbox" id="vodootliv" />
                 <label for="vodootliv">Водоотлив</label>
             </div>
@@ -260,20 +261,38 @@
         <div class="constructor__right">
             <div class="constructor__right-title">Монтажные работы</div>
             <div class="constructor__row">
-                <div class="constructor__right-label">Установка окна:</div>
-                <input type="radio" class="constructor__radio" id="ustanovka-okna-da" name="radio">
-                <label for="ustanovka-okna-da">Да</label>
-
-                <input type="radio" class="constructor__radio" id="ustanovka-okna-net" name="radio">
-                <label for="ustanovka-okna-net">Нет</label>
+                <div class="grouped fields">
+                    <div class="constructor__right-label">Установка окна:</div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" class="constructor__radio" id="ustanovka-okna-da" name="ustanovka-okna">
+                            <label for="ustanovka-okna-da">Да</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" class="constructor__radio" id="ustanovka-okna-net" name="ustanovka-okna">
+                            <label for="ustanovka-okna-net">Нет</label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="constructor__row">
-                <div class="constructor__right-label">Отделка откосов:</div>
-                <input type="radio" class="constructor__radio" id="otdelka-otkosov-da" name="radio">
-                <label for="otdelka-otkosov-da">Да</label>
-
-                <input type="radio" class="constructor__radio" id="otdelka-otkosov-net" name="radio">
-                <label for="otdelka-otkosov-net">Нет</label>
+                <div class="grouped fields">
+                    <div class="constructor__right-label">Отделка откосов:</div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" class="constructor__radio" id="otdelka-otkosov-da" name="otdelka-otkosov">
+                            <label for="otdelka-otkosov-da">Да</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" class="constructor__radio" id="otdelka-otkosov-net" name="otdelka-otkosov">
+                            <label for="otdelka-otkosov-net">Нет</label>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="constructor__row">
                 <label for="type-house" class="constructor__label">Тип дома:</label>
@@ -572,6 +591,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="{$config['settings']['public_assets']}/js/jquery.magnific-popup.min.js"></script>
+<script src="{$config['settings']['public_assets']}/js/semantic.min.js"></script>
 
 <script src="{$config['settings']['public_assets']}/js/common.min.js"></script>
 <script src="{$config['settings']['public_assets']}/js/scripts.min.js"></script>

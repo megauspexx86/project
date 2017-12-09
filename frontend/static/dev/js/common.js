@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $('.dd').dropdown();
+
     $("a[href='#personal-order']").magnificPopup({
         mainClass: 'my-mfp-zoom-in',
         removalDelay: 300,

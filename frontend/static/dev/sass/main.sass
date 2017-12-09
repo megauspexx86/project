@@ -347,6 +347,7 @@ body
 	display: none
 	position: absolute
 	top: 46px
+	z-index: 10
 
 .constructor__type-bg
 	background: #f5f5f5
@@ -424,18 +425,21 @@ body
 	width: 100px
 	height: 200px
 	background: url(wnd-icons.png) no-repeat 0 -600px
+	margin-bottom: 7px
 
 .constructor__box-window_12
 	display: block
 	width: 100px
 	height: 200px
 	background: url(wnd-icons.png)
+	margin-bottom: 7px
 
 .constructor__box-window_13
 	display: block
 	width: 100px
 	height: 200px
 	background: url(wnd-icons.png) no-repeat 0 -400px
+	margin-bottom: 7px
 
 .constructor__window
 	display: flex
@@ -527,6 +531,7 @@ body
 		display: flex
 	.constructor__window:nth-child(2)
 		.constructor__box-window_11
+			margin-bottom: 7px
 			width: 95px
 			height: 270px
 			background: url(wnd-icons.png) no-repeat -390px 0
@@ -540,6 +545,27 @@ body
 		display: flex
 	.constructor__window:nth-child(2)
 		.constructor__box-window_11
+			margin-bottom: 7px
 			width: 95px
 			height: 270px
 			background: url(wnd-icons.png) no-repeat -390px 0
+
+.constructor__row
+	display: flex
+	align-items: center
+	label
+		font-size: 14px
+
+.constructor__row-title
+	font-size: 14px
+
+.ui.selection.dropdown.dd
+	height: 35px
+	min-height: 35px
+	padding: 10px
+	font-size: 14px
+
+.ui.selection.dropdown.dd>.dropdown.icon
+	padding: 0
+	top: 20px
+	right: 20px

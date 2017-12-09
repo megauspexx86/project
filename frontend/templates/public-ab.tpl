@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=1170">
     <title></title>
 
-    <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/magnific-popup.min.css">
     <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/semantic.min.css">
     <link rel="stylesheet" href="{$config['settings']['public_assets']}/css/main.min.css">
 
@@ -156,7 +155,7 @@
             </ul>
             <div class="constructor__row">
                 <label for="constructor-profiles" class="constructor__label">Профиль:</label>
-                <select id="constructor-profiles ui dropdown" class="constructor__select">
+                <select id="constructor-profiles" class="constructor__select dd">
                     <option value="fav">Фаворит 71 мм</option>
                     <option value="bau">Баутек 71 мм</option>
                     <option value="grain">Grain Prestige 70 мм</option>
@@ -164,7 +163,7 @@
             </div>
             <div class="constructor__row">
                 <label for="constructor-clrs">Цвета сторон:</label>
-                <select id="constructor-clrs">
+                <select id="constructor-clrs" class="dd">
                     <option value="whwh">Белый/Белый</option>
                     <option value="whclr">Белый/Цвет</option>
                     <option value="clrclr">Цвет/Цвет</option>
@@ -172,7 +171,7 @@
             </div>
             <div class="constructor__row">
                 <label for="constructor-glasses">Стеклопакет:</label>
-                <select id="constructor-glasses">
+                <select id="constructor-glasses" class="dd">
                     <option value="spo24">Однокамерный 24 мм</option>
                     <option value="spd32">Двухкамерный 32 мм</option>
                     <option value="spd40">Двухкамерный 40 мм</option>
@@ -181,7 +180,7 @@
             </div>
             <div class="constructor__row">
                 <label for="constructor-glasstypes">Стекло:</label>
-                <select id="constructor-glasstypes">
+                <select id="constructor-glasstypes" class="dd">
                     <option value="ordinary">Обычное</option>
                     <option value="energo">Энергосберегающее</option>
                     <option value="reflective">Солнцеотражающее</option>
@@ -192,7 +191,7 @@
             <div class="consttructor__title">Дополнительно</div>
             <div class="constructor__row">
                 <div class="constructor__row-title">Подоконник:</div>
-                <select id="constructor-podoconnik">
+                <select id="constructor-podoconnik" class="dd">
                     <option value="200">200</option>
                     <option value="300">300</option>
                     <option value="400">400</option>
@@ -201,7 +200,7 @@
             </div>
             <div class="constructor__row">
                 <div class="constructor__row-title">Ограничитель открывания:</div>
-                <select id="constructor-podoconnik">
+                <select id="constructor-podoconnik" class="dd">
                     <option value="no">Нет</option>
                     <option value="obichniy">Обычный</option>
                     <option value="discretniy">Дискретный</option>
@@ -295,7 +294,7 @@
             </div>
             <div class="constructor__row">
                 <label for="type-house" class="constructor__label">Тип дома:</label>
-                <select id="type-house" class="constructor__select">
+                <select id="type-house" class="constructor__select dd">
                     <option value="panelniy">Панельный</option>
                     <option value="kirpichniy">Кирпичный</option>
                     <option value="derevyanniy">Деревянный</option>
@@ -423,7 +422,7 @@
                     <li class="content__item">
                         <div class="content__item-number">1</div>
                         <div class="content__image-wrapper">
-                            <img src="img/image-1.png" alt="" class="content__item-image">
+                            <img src="{$config['settings']['public_assets']}/img/image-1.png" alt="" class="content__item-image">
                         </div>
                         <div class="content__item-inner">
                             <p class="content__item-title">KBE Эксперт 1320x1430 Г+П/О СП2</p>
@@ -438,7 +437,7 @@
                     <li class="content__item">
                         <div class="content__item-number">2</div>
                         <div class="content__image-wrapper">
-                            <img src="img/image-1.png" alt="" class="content__item-image">
+                            <img src="{$config['settings']['public_assets']}/img/image-1.png" alt="" class="content__item-image">
                         </div>
                         <div class="content__item-inner">
                             <p class="content__item-title">KBE Эксперт 1320x1430 Г+П/О СП2</p>
@@ -453,7 +452,7 @@
                     <li class="content__item">
                         <div class="content__item-number">3</div>
                         <div class="content__image-wrapper">
-                            <img src="img/image-1.png" alt="" class="content__item-image">
+                            <img src="{$config['settings']['public_assets']}/img/image-1.png" alt="" class="content__item-image">
                         </div>
                         <div class="content__item-inner">
                             <p class="content__item-title">KBE Эксперт 1320x1430 Г+П/О СП2</p>
@@ -591,14 +590,8 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
-<script src="{$config['settings']['public_assets']}/js/jquery.magnific-popup.min.js"></script>
 <script src="{$config['settings']['public_assets']}/js/semantic.min.js"></script>
 
-<script src="{$config['settings']['public_assets']}/js/common.js"></script>
-
-<script src="{$config['settings']['public_assets']}/js/common.min.js"></script>
-
-<script src="{$config['settings']['public_assets']}/js/common.min.js"></script>
 <script src="{$config['settings']['public_assets']}/js/scripts.min.js"></script>
 </body>
 </html>

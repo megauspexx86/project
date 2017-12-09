@@ -30,6 +30,7 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
     return gulp.src([
         'dev/libs/magnific-popup/jquery.magnific-popup.min.js', //раскомментировать, если будем использовать не из sdn
+        'dev/js/semantic.min.js', //раскомментировать, если будем использовать не из sdn
         'dev/js/common.min.js' // Всегда в конце
     ])
         .pipe(concat('scripts.min.js'))

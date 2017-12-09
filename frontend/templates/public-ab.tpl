@@ -18,7 +18,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!--Пользовательские стили калькулятора. Если css не задан, будут использованы стили по умолчанию-->
+    {*<!--Пользовательские стили калькулятора. Если css не задан, будут использованы стили по умолчанию-->
     <!--<link href="http://your-domain.ru/path-to-css/calc.css" rel="stylesheet">-->
     <!--или, если путь относительный-->
     <link href="{$config['settings']['public_assets']}/css/calc.css" rel="stylesheet">
@@ -42,8 +42,7 @@
         .lwcdiv{ margin-left: 14px;}
 
 
-    </style>
-	
+    </style>*}
 </head>
 <body>
 
@@ -590,8 +589,14 @@
 <![endif]-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
 <script src="{$config['settings']['public_assets']}/js/jquery.magnific-popup.min.js"></script>
 <script src="{$config['settings']['public_assets']}/js/semantic.min.js"></script>
+
+<script src="{$config['settings']['public_assets']}/js/common.js"></script>
+
+<script src="{$config['settings']['public_assets']}/js/common.min.js"></script>
 
 <script src="{$config['settings']['public_assets']}/js/common.min.js"></script>
 <script src="{$config['settings']['public_assets']}/js/scripts.min.js"></script>

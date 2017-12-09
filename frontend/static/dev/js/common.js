@@ -66,3 +66,31 @@ $(document).ready(function(){
     });
 
 });
+
+
+$(function () {
+
+    var framuga = {1: 'one', 2: 'two', 3: 'three'};
+
+    var window_type = {
+        'constructor__box-window_11': 'constructor__box-window_12',
+        'constructor__box-window_12': 'constructor__box-window_13',
+        'constructor__box-window_13': 'constructor__box-window_11'
+    };
+
+    $('.constructor__image').click(function () {
+        self = $(this);
+
+        var id = 'ctype' + self.attr('id').replace('type', '');
+        var framuga_index = self.attr('id')[self.attr('id').length - 1];
+
+        $('.constructor__center').attr('id', id);
+        $('.constructor__box .constructor__box-top a:first').attr('class', 'constructor__box-framuga-' + framuga[framuga_index]);
+    });
+
+    $('.constructor__window .constructor__box').click(function () {
+        self = $(this);
+        el = self[0].classList[self[0].classList.length - 1];
+        self.attr('class', window_type[el]);
+    });
+});

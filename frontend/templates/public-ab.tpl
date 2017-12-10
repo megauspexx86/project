@@ -162,7 +162,7 @@
                 </select>
             </div>
             <div class="constructor__row">
-                <label for="constructor-clrs">Цвета сторон:</label>
+                <label for="constructor-clrs" class="constructor__label">Цвета сторон:</label>
                 <select id="constructor-clrs" class="dd">
                     <option value="whwh">Белый/Белый</option>
                     <option value="whclr">Белый/Цвет</option>
@@ -170,7 +170,7 @@
                 </select>
             </div>
             <div class="constructor__row">
-                <label for="constructor-glasses">Стеклопакет:</label>
+                <label for="constructor-glasses" class="constructor__label">Стеклопакет:</label>
                 <select id="constructor-glasses" class="dd">
                     <option value="spo24">Однокамерный 24 мм</option>
                     <option value="spd32">Двухкамерный 32 мм</option>
@@ -179,7 +179,7 @@
                 </select>
             </div>
             <div class="constructor__row">
-                <label for="constructor-glasstypes">Стекло:</label>
+                <label for="constructor-glasstypes" class="constructor__label">Стекло:</label>
                 <select id="constructor-glasstypes" class="dd">
                     <option value="ordinary">Обычное</option>
                     <option value="energo">Энергосберегающее</option>
@@ -205,18 +205,6 @@
                     <option value="obichniy">Обычный</option>
                     <option value="discretniy">Дискретный</option>
                 </select>
-            </div>
-            <div class="constructor__row ui checkbox">
-                <input type="checkbox" class="constructor__checkbox" id="micro" />
-                <label for="micro">Микропроветривание</label>
-            </div>
-            <div class="constructor__row ui checkbox">
-                <input type="checkbox" class="constructor__checkbox" id="moskitnaya" />
-                <label for="moskitnaya">Москитная сетка</label>
-            </div>
-            <div class="constructor__row ui checkbox">
-                <input type="checkbox" class="constructor__checkbox" id="vodootliv" />
-                <label for="vodootliv">Водоотлив</label>
             </div>
         </div>
         <div class="constructor__center" id="ctype_2_1">
@@ -259,18 +247,28 @@
         <div class="constructor__right">
             <div class="constructor__right-title">Монтажные работы</div>
             <div class="constructor__row">
+                <label for="type-house" class="constructor__label">Тип дома:</label>
+                <select id="type-house" class="constructor__select dd">
+                    <option value="panelniy">Панельный</option>
+                    <option value="kirpichniy">Кирпичный</option>
+                    <option value="derevyanniy">Деревянный</option>
+                </select>
+            </div>
+            <div class="constructor__row">
                 <div class="grouped fields">
                     <div class="constructor__right-label">Установка окна:</div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" class="constructor__radio" id="ustanovka-okna-da" name="ustanovka-okna">
-                            <label for="ustanovka-okna-da">Да</label>
+                    <div class="constructor__field-wrapper">
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" class="constructor__radio" id="ustanovka-okna-da" name="ustanovka-okna">
+                                <label for="ustanovka-okna-da">Да</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" class="constructor__radio" id="ustanovka-okna-net" name="ustanovka-okna">
-                            <label for="ustanovka-okna-net">Нет</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" class="constructor__radio" id="ustanovka-okna-net" name="ustanovka-okna">
+                                <label for="ustanovka-okna-net">Нет</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -278,27 +276,33 @@
             <div class="constructor__row">
                 <div class="grouped fields">
                     <div class="constructor__right-label">Отделка откосов:</div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" class="constructor__radio" id="otdelka-otkosov-da" name="otdelka-otkosov">
-                            <label for="otdelka-otkosov-da">Да</label>
+                    <div class="constructor__field-wrapper">
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" class="constructor__radio" id="otdelka-otkosov-da" name="otdelka-otkosov">
+                                <label for="otdelka-otkosov-da">Да</label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="field">
-                        <div class="ui radio checkbox">
-                            <input type="radio" class="constructor__radio" id="otdelka-otkosov-net" name="otdelka-otkosov">
-                            <label for="otdelka-otkosov-net">Нет</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" class="constructor__radio" id="otdelka-otkosov-net" name="otdelka-otkosov">
+                                <label for="otdelka-otkosov-net">Нет</label>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="constructor__row">
-                <label for="type-house" class="constructor__label">Тип дома:</label>
-                <select id="type-house" class="constructor__select dd">
-                    <option value="panelniy">Панельный</option>
-                    <option value="kirpichniy">Кирпичный</option>
-                    <option value="derevyanniy">Деревянный</option>
-                </select>
+            <div class="constructor__row ui checkbox">
+                <input type="checkbox" class="constructor__checkbox" id="micro" />
+                <label for="micro">Микропроветривание</label>
+            </div>
+            <div class="constructor__row ui checkbox">
+                <input type="checkbox" class="constructor__checkbox" id="moskitnaya" />
+                <label for="moskitnaya">Москитная сетка</label>
+            </div>
+            <div class="constructor__row ui checkbox">
+                <input type="checkbox" class="constructor__checkbox" id="vodootliv" />
+                <label for="vodootliv">Водоотлив</label>
             </div>
         </div>
     </div>

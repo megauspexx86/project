@@ -295,21 +295,27 @@ body
 		justify-content: center
 
 .constructor__left
-	width: 300px
+	width: 350px
 
 .constructor__type
 	display: flex
 	list-style: none
-	padding: 0
-	margin: 0
+	background: white
+	margin-bottom: 10px
+	padding: 0 5px
+	border: 1px solid #e0e0e0
 
 .constructor__type-item
-	margin: 0 15px
+	width: 33.33%
+	padding: 10px 0
 	display: flex
 	flex-direction: column
 	align-items: center
 	text-align: center
 	position: relative
+	&:nth-child(2)
+		border-right: 1px solid #e0e0e0
+		border-left: 1px solid #e0e0e0
 	&:hover
 		.constructor__bottom-list
 			display: block
@@ -320,6 +326,12 @@ body
 	display: block
 	border: 1px solid #b5b5b5
 	border-radius: 2px
+	margin-bottom: 7px
+
+.consttructor__title
+	margin: 5px 10px
+	font-size: 15px
+	text-align: center
 
 .constructor__bottom-item
 	width: 63px
@@ -346,7 +358,7 @@ body
 	margin: 0
 	display: none
 	position: absolute
-	top: 46px
+	top: 56px
 	z-index: 10
 
 .constructor__type-bg
@@ -388,7 +400,8 @@ body
 	background-position: -98px -117px
 
 .constructor__name
-	font-size: 14px
+	font-size: 12px
+	line-height: 14px
 	font-family: 'Roboto'
 
 .constructor__box-top
@@ -554,18 +567,50 @@ body
 	display: flex
 	align-items: center
 	label
-		font-size: 14px
+		font-size: 12px
 
 .constructor__row-title
-	font-size: 14px
+	font-size: 12px
 
 .ui.selection.dropdown.dd
 	height: 35px
 	min-height: 35px
-	padding: 10px
-	font-size: 14px
+	padding: 11px
+	font-size: 12px
+	width: 180px
+	min-width: 180px
+	border: 1px solid white
+	border-radius: 0px
+	.menu>.item
+		font-size: 12px
 
 .ui.selection.dropdown.dd>.dropdown.icon
 	padding: 0
-	top: 20px
+	top: 19px
 	right: 20px
+
+.constructor__field-wrapper
+	display: flex
+
+.constructor__row.ui.checkbox
+	display: flex
+	margin-bottom: 5px
+
+.constructor__left
+	.constructor__row
+		justify-content: space-between
+		margin-bottom: 5px
+		border: 1px solid #e0e0e0
+	.constructor__row-title,
+	.constructor__label
+		padding-left: 10px
+		display: flex
+		align-items: center
+		width: 170px
+		height: 35px
+		background: white
+		border-right: 1px solid #F4F5F7
+
+.constructor
+	background: #F4F5F7
+	height: 410px
